@@ -40,9 +40,26 @@
     .section-3 p {
       border-bottom: 1px solid #000;
     }
+
+    ul li {
+      display: inline-block;
+    }
+
+    ul li a:after {
+      content: " / ";
+    }
+
+    ul li:last-child a:after {
+      display: none;
+    }
   </style>
 </head>
 <body>
+  <ul>
+    <li><a href="#">ewoo</a></li>
+    <li><a href="#">ewoo</a></li>
+    <li><a href="#">ewoo</a></li>
+  </ul>
   <div class="flex-container">
     <section class="section-1">
       <h3>Section 1</h3>
