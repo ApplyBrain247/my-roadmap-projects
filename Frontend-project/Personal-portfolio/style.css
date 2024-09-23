@@ -1,21 +1,24 @@
 *{
     box-sizing: border-box;
 }
-body{
-  border: 1px solid #000;
-}
 
 .flexbox{
     display: flex;
     justify-content: end;
 }
-.item{
-    width: 70px;
-    height: 100px;
+.apply ul li {
+  display: inline-block;
 }
-.item a{
-    text-decoration: none;
+ul li a {
+  text-decoration: none;
 }
+ul li a:after{
+  content: " / ";
+}
+ul li:last-child a:after {
+  display: none;
+}
+
 .item1{
     width: 200px;
     height: 100px;
@@ -25,22 +28,20 @@ body{
 
 .flex-container {
     display: flex;
-    padding: 20px;
-    
+    padding: 20px;   
   }
-
+  
   .section-1 {
     border: 1px solid #000;
     border-right: none;
-    padding: 10px;
     flex: 0.5;
   }
-  
 
   .grouped-section {
     display: flex;
     flex-direction: column;
     border: 1px solid #000;
+    border-right: none;
     flex: 1;
   }
 
@@ -61,7 +62,6 @@ body{
   }
 
   .section-4 {
-    border-bottom: 1px solid #000;
     padding: 10px;
   }
 
@@ -69,23 +69,33 @@ body{
     text-align: center;
     margin-bottom: 100px;
   }
+  .front>h1{
+    font-size: 40px;
+  }
+  .front p{
+    color: grey;
+  }
   .project-html {
     border-bottom: 1px solid black;
   }
   .calc{
     border-bottom: 1px solid black;
+    padding: 10px;
   }
   .quiz{
     border-bottom: 1px solid black;
+    padding: 10px;
   }
   .timer{
     border-bottom: 1px solid black;
+    padding: 10px;
+  }
+  .product {
+    padding: 10px;
   }
   .flex-container-2 {
     display: flex;
-    padding: 20px;
-    margin: 10px;
-    margin-left: 50px;
+    justify-content: center;
   }
   .review-section{
     border: 1px solid #000;
@@ -109,8 +119,16 @@ body{
   }
   .footer{
     text-align: center;
-    
+    margin-top: 120px;
+    margin-bottom: 100px;
+  }
+  .footer small{
+    font-weight: bold;
   }
  .review{
-  margin: 30px;
- }
+ margin-left: 80px;
+ margin-bottom: 50px;
+}
+.prof{
+  color: grey;
+}
