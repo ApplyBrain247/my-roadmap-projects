@@ -4,8 +4,14 @@
 
 .flexbox{
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.apply ul {
+  padding: 0;
+}
+
 .apply ul li {
   display: inline-block;
 }
@@ -17,13 +23,6 @@ ul li a:after{
 }
 ul li:last-child a:after {
   display: none;
-}
-
-.item1{
-    width: 200px;
-    height: 100px;
-    margin-right: auto;
-    margin-left: 20px;
 }
 
 .flex-container {
