@@ -75,24 +75,15 @@ ul li:last-child a:after {
   .front p{
     color: grey;
   }
-  .project-html {
-    border-bottom: 1px solid black;
-  }
-  .calc{
+  .section-1 p {
     border-bottom: 1px solid black;
     padding: 10px;
   }
-  .quiz{
-    border-bottom: 1px solid black;
+
+  .section-1 h3 {
     padding: 10px;
   }
-  .timer{
-    border-bottom: 1px solid black;
-    padding: 10px;
-  }
-  .product {
-    padding: 10px;
-  }
+
   .flex-container-2 {
     display: flex;
     justify-content: center;
