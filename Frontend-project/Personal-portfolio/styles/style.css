@@ -35,6 +35,7 @@ ul li:last-child a:after {
     border-right: none;
     flex: 0.5;
   }
+ 
 
   .grouped-section {
     display: flex;

@@ -1,6 +1,19 @@
-@media(max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .flexbox {
     display: block;
     text-align: center;
   }
+  .front {
+    display: block;
+    text-align: center;
+  }
+  .flex-container{
+    display: block;
+    text-align: center;
+}
+.review {
+  display: block;
+  text-align: center;
+}
+
 }
