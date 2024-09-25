@@ -5,15 +5,32 @@
   }
   .front {
     display: block;
-    text-align: center;
   }
   .flex-container{
+    flex-direction: column;
+    border-right: 1px solid #000;
+    padding: 0;
+  }
+
+  .section-1 {
+    text-align: center;
+  }
+
+  .section-1 h3 {
+    border-bottom: 1px solid black;
+  }
+
+  .section-1 p:last-child {
+    border-bottom: none;
+  }
+
+  .grouped-section {
+    border-top: none;
+    padding: 0;
+  }
+
+  .review {
     display: block;
     text-align: center;
-}
-.review {
-  display: block;
-  text-align: center;
-}
-
+  }
 }

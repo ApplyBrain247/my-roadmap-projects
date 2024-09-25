@@ -123,3 +123,13 @@ ul li:last-child a:after {
 .prof{
   color: grey;
 }
+
+.section-4 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section-4 ul li:before {
+  content: '- ';
+}
