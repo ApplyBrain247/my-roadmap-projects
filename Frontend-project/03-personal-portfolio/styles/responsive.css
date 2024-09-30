@@ -14,10 +14,14 @@
 
   .section-1 {
     text-align: center;
+    background-color: rgba(113, 122, 121, 0.904); ;
   }
 
-  .section-1 h3 {
+  .section-1>h3 {
     border-bottom: 1px solid black;
+    background-color: white;
+    border: none;
+    margin-top: 0%;
   }
 
   .section-1 p:last-child {
@@ -41,4 +45,20 @@
   .flex-container-2>:not(:first-child) {
     display: none;
   }
+  
+  .section-2 , .section-3{
+    background-color:rgba(113, 122, 121, 0.904); ;
+  }
+  .section-2>h3 {
+    text-align: center;
+    background-color: white;
+    padding-top: 2px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    border: 1px solid black;
+  }
+
+  
+  
 }
