@@ -14,7 +14,7 @@
 
   .section-1 {
     text-align: center;
-    background-color: rgba(113, 122, 121, 0.904); ;
+    background-color: #CCC;
   }
 
   .section-1>h3 {
@@ -47,7 +47,7 @@
   }
   
   .section-2 , .section-3{
-    background-color:rgba(113, 122, 121, 0.904); ;
+    background-color: #CCC;
   }
   .section-2>h3 {
     text-align: center;
