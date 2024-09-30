@@ -133,3 +133,12 @@ ul li:last-child a:after {
 .section-4 ul li:before {
   content: '- ';
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+h1, h3 {
+  font-family: "Caveat", cursive;
+}
