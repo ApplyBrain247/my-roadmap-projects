@@ -33,4 +33,12 @@
     display: block;
     text-align: center;
   }
+
+  .flex-container-2 {
+    flex-direction: column;
+  }
+
+  .flex-container-2>:not(:first-child) {
+    display: none;
+  }
 }
