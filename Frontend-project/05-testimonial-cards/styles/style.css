@@ -1,0 +1,178 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Figtree', sans-serif; 
+}
+
+
+.testimonial-container {
+    border: 1px solid #000;
+    max-width: 900px;
+    width: 100%;
+    margin: 180px;
+    background-color: #fff;
+}
+
+.sub-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 300px;
+}
+
+.sub-container-two{
+    margin-top: 20px;
+}
+
+
+.testimonial-card-1{
+    max-width: 350px;
+}
+.speech-bubble {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 10px;
+  }
+  
+  .speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -13px;
+    left: 2.4rem;
+    transform: translateX(-50%);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #1e1e1e;
+  }
+  
+  .speech-bubble a {
+    color: #00bfff;
+    text-decoration: none;
+  }
+  
+  .speech-bubble a:hover {
+    text-decoration: underline;
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 0 0.75rem;
+    margin-left: 10px;
+  }
+  .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+.card-two {
+    border: 1px solid black;
+    width: 500px;
+    padding: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.card-two div{
+    display: flex;
+    margin: 5px;
+}
+
+.card-two div p {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.card-two div img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+
+.passport img{
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 200px;
+}
+
+.card-three {
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 750px;
+    margin-right: 50px;
+    padding: 50px;
+    font-size: 20px;
+    background-color: #000;
+    color: #fff;
+}
+.card-three img {
+    width: 120px;
+}
+
+.card-three p :first-child{
+    font-size: 50px;
+}
+
+.last-container{
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 90px;
+    width: 825px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.last-container p {
+    font-size: 20px;
+    margin-top: -50px;
+    text-overflow: unset;   
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.img :first-child{
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 8%;
+    height: 8%;
+    opacity: 0.3;
+}
+
+.img :last-child {
+    margin-left: 10px;
+    border-radius: 50px;
+    width: 8%;
+    height: 8%;
+    opacity: 0.3;   
+}
+
+.img :nth-child(2){
+    border-radius: 50%;
+    width: 9%;
+    height: 9%;
+}
+
