@@ -139,6 +139,7 @@ body {
     margin-left: 20px;
     margin-bottom: 20px;
     margin-top: 20px;
+   
 }
 
 
@@ -147,8 +148,23 @@ body {
     margin-top: -50px;
     text-overflow: unset;   
 }
+.last-container img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+   
+}
 
-.img{
+.center-img{
+    width: 70px;
+    height: 70px;
+    border-color: #CCC;
+}
+
+
+/* .img{
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -160,6 +176,7 @@ body {
     width: 8%;
     height: 8%;
     opacity: 0.3;
+    
 }
 
 .img :last-child {
@@ -175,4 +192,4 @@ body {
     width: 9%;
     height: 9%;
 }
-
+ */

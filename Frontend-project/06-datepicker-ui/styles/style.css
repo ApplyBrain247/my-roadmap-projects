@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Figtree', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+header img{
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+    border-left: 1px solid black;
+    padding-left: 5px;
+}
+ p {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.month{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.month:after{
+    content: " / ";
+}
+.month:before{
+    content: ' / ';
+}
+
+.year {
+    margin-right: 5px;
+}
+
+.day {
+    margin-left: -2px;
+}
+
+.calender-menu {
+    border: 1px solid black;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+table, td {
+    border: 1px solid black;
+    padding: 10px;      
+}
+table, th {
+    border-top: none;
+}
+.div-dec{
+    text-align: center;
+}
+.div-dec p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
