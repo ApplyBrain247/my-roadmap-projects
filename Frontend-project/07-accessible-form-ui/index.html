@@ -11,24 +11,20 @@
     <div class="main">
         <div class="div-form">
             <form action="">
-                <label for="#">Full Name</label> <br>
-                <input type="text" value="What should we call you?">
-            </form> <br>
-            <form action="" class="form">
-                <label for="#">Email</label> <br>
-                <input type="text" value="john@doe.com"><br>
-                <p class="paragraph">Email is already taken</p>
-            </form> 
-
-            <form action="">
-                <label for="#">Enter Password</label> <br>
-                <input type="text" value="XXXXXXXX">
-                <i class="fa-solid fa-eye"></i>
-            </form> <br>
-            <form action="">
-                <label for="#">Confirm Password</label> <br>
-                <input type="text" value="XXXXXXXX">
-                <i class="fa-solid fa-eye"></i>
+               <label for="fname">Full Name</label>
+               <input type="text" id="fname" name="fname" placeholder="What should we call you?">
+               <div class="error-message" id="fullnameError"></div>
+               <label for="email">Email</label>
+               <input type="text" id="email" name="email" placeholder="XXXXXXXX">
+               <div class="error-message" id="email-is-already-taken"></div>
+               <label for="enterpassword">Enter Password</label>
+               <input type="" id="enterpassword" name="enterpassword" placeholder="XXXXXXXX">
+               <i class="fa-solid fa-eye"></i>
+               <div class="error-message" id="passwordError"></div>
+               <label for="confirm-password">Confirm Password</label>
+               <input type="text" id="confirm-password" name="confirm-password" placeholder="XXXXXXXX">
+               <i class="fa-solid fa-eye"></i>
+               <div class="error-message" id="confirm-passwordError"></div>
             </form>
             <button>Update profile</button>    
         </div>

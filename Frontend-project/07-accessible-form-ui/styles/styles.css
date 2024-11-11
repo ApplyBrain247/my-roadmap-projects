@@ -22,7 +22,11 @@ body{
 .div-form{
    flex: 2;
    padding: 40px;
-   position: relative;  
+   position: relative; 
+}
+
+.div-form form input{
+    margin-bottom: 18px;
 }
 
 .div-form input{
@@ -44,10 +48,11 @@ body{
     border-color: red;
     color: red;  
 }
-
-.paragraph{
-    color: red;
-    margin: 10px 0px 20px;
+input:focus, textarea:focus, select :focus{
+    outline: 2px solid #4a90e2;
+    outline-offset: 2px;
+    box-shadow: 0 0 5px rgb(74, 144, 226, 0.5);
+    transition: outline 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .div-form label{
@@ -63,7 +68,7 @@ body{
 
 button{
     width: 280px;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 15px;
     border-radius: 8px;
     background-color: black;
@@ -112,4 +117,14 @@ button{
 .line-across{
     color: grey;
     text-decoration: line-through;
+}
+
+.error-message{
+    height: 1.2em;
+    color: red;
+    font-size: 0.2em;
+    visibility: hidden;
+}
+.error-message.active {
+    visibility: visible;
 }
