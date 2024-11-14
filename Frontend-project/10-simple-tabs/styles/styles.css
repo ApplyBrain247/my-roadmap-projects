@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.tabs-container{
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 780px;
+    height: 400px;
+    padding: 0px;    
+}
+
+.tabs{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.tabs :nth-child(1){
+    border-bottom: 2px solid black;
+}
+
+.tabs li:not(:first-child){
+    color: grey;
+    
+}
+
+.second-tab, .third-tab, .fourth-tab {
+    display: none;
+}
+
+.first-tab{
+    margin-left: 35px;
+}
+
+.first-tab :nth-child(2){
+    margin: 50px 0px 100px 0px;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 100px;
+    width: 700px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 60px;
+    background-color: #000;
+    color: #fff;
+}
+
+.first-tab :nth-child(3){
+    margin-top: -70px;
+    font-size: 15px;
+    font-weight: bold;
+}
