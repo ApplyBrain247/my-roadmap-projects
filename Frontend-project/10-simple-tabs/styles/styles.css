@@ -19,24 +19,22 @@ body{
     font-size: 18px;
 }
 
-.tabs :nth-child(1){
+.tabs .active {
     border-bottom: 2px solid black;
+    color: #000 !important;
 }
 
-.tabs li:not(:first-child){
+.tabs li {
     color: grey;
-    
+    cursor: pointer;
 }
 
-.second-tab, .third-tab, .fourth-tab {
+.tabs-content .content {
     display: none;
-}
-
-.first-tab{
     margin-left: 35px;
 }
 
-.first-tab :nth-child(2){
+.content :nth-child(2){
     margin: 50px 0px 100px 0px;
     border: 1px solid black;
     border-radius: 15px;
@@ -49,8 +47,12 @@ body{
     color: #fff;
 }
 
-.first-tab :nth-child(3){
+.content :nth-child(3){
     margin-top: -70px;
     font-size: 15px;
     font-weight: bold;
+}
+
+.tabs-content .active {
+    display: block;
 }
