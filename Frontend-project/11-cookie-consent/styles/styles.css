@@ -1,0 +1,166 @@
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container{
+    border: 2px solid #000;
+    height: 590px;
+    width: 700px;
+    border-radius: 20px;   
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 15px;
+    opacity: 0.5;
+}
+
+.header-left{
+    display: contents;
+    align-items: center;
+    margin: 5px;
+}
+
+.logo{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 4px;
+    background-color: #000;
+    color: #fff;
+}
+
+.name{
+    margin: 0px 90px 0px -80px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.header-right a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+}
+
+.content-1{
+    border: 1px solid #000;
+    border-radius: 15px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 30px 0px 0px 70px ;
+    height: 100px;
+    width: 555px;
+    opacity: 0.2;
+}
+
+.content-2{
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 30px 0px 0px 70px;
+    height: 30px;
+    width: 555px;
+    opacity: 0.2;
+}
+
+.last-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    height: 280px;
+    position: relative;
+}
+
+.left {
+    flex: 1;
+    text-align: left;
+    color: #333;
+    margin: -5px 0px 0px -7px;
+    opacity: 0.2;
+}
+
+.middle {
+    flex: 1;
+    text-align: center;
+    color: #555;
+    margin: -115px 0px 0px -1000px;
+    opacity: 0.2;
+}
+
+.right {
+    border: 1px solid #000;
+    border-radius: 20px;
+    position: absolute;
+    height: 250px;
+    width: 230px;
+    margin: -70px 79px 0px 400px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.cookie{
+    margin: 20px 0px 30px 0px;
+    font-size: 40px;
+}
+
+.right p {
+    width: 150px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.right button{
+    width: 240px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: -2px;
+}
+
+.x-mark{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -10px;
+}
+
+.empty-box{
+    display: flex;
+    margin-left: 29px;
+}
+
+.box-1{
+    border: 1px solid #000;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #000;
+    margin: 20px 30px 0px 25px;
+}
+
+.box-2{
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 100px;
+    background-color: #000;
+    margin-top: 20px;
+}
+
+.no-bullets{
+    list-style-type: none;
+}
+  
