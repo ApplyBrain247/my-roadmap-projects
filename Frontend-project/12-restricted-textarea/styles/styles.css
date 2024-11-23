@@ -12,6 +12,7 @@ textarea{
 
 textarea.limit-reached {
     border-color: red;
+    outline-color: red;
 }
 
 .counter {
