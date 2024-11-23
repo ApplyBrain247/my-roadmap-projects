@@ -1,0 +1,28 @@
+textarea{
+    width: 500px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+    padding: 10px;
+    transition: border-color 0.3s;
+    position: relative;
+    cursor: pointer;
+}
+
+textarea.limit-reached {
+    border-color: red;
+}
+
+.counter {
+    font-size: 14px;
+    color: #555;
+    margin-top: -40px;
+    margin-left: 450px;
+    position: absolute;
+    font-weight: bold;
+}
+
+.counter.limit-reached {
+    color: red;
+}
