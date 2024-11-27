@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: "Figtree", sans-serif;
+}
+.accordion-container{
+    border: 2px solid #000;
+    border-radius: 15px;
+    height: 920px;
+    width: 600px;
+    padding-left: 100px;
+}
+.accordion-heading >h3{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.accordion-qtn{
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    width: 500px;
+    text-align: left;
+    color: #fff;
+    background-color: #000;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.accordion-ans{
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    width: 500px;
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+span{
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 480px;
+    color: #fff;
+    font-size: 10px; 
+}
+
+.accordion-ans{
+    display: non;
+}
+
+
+  
