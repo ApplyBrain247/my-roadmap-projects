@@ -1,7 +1,14 @@
-  
-const qtn = document.querySelectorAll('.accordion-qtn');
-const ans = document.querySelectorAll('.accordion-ans');
+const questions = document.querySelectorAll('.accordion-qtn');
+const answers = document.querySelectorAll('.accordion-ans');
 
-qtn.addEventListener('click' function(){
+for (const index in questions) {
+  questions[index].onclick = function() {
+    // hide all answers
+    for (const answer of answers) {
+      answer.style.display = 'none'
+    }
 
-})
+    // show answer of clicked question
+    answers[index].style.display = 'block'
+  }
+}
