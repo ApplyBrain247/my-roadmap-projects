@@ -1,0 +1,41 @@
+body{
+    font-family: "Figtree", sans-serif;
+}
+.accordion-container{
+    border: 2px solid #000;
+    border-radius: 15px;
+    width: 600px;
+    padding: 50px 150px;
+    margin: auto;
+}
+.accordion-heading > h3{
+    font-size: 20px;
+}
+
+.accordion-qtn{
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: left;
+    color: #fff;
+    background-color: #000;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.accordion-ans{
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.accordion-qtn,
+.accordion-ans {
+    padding: 20px;
+}
+
+.accordion-qtn span {
+    font-size: 13px;
+}
