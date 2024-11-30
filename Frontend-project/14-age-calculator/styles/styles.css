@@ -1,0 +1,33 @@
+.age-calc{
+    width: 500px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+label{
+    font-weight: bold;
+    margin-left: 85px;
+}
+
+button{
+    display: block;
+    width: 305px;
+    height: 30px;
+    margin: 10px 85px;
+    background-color: rgb(80, 79, 79);
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+input{
+    display: block;
+    width: 300px;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin: 10px 85px;
+}
