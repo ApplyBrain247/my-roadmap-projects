@@ -43,6 +43,6 @@ function calculateAge() {
 }
 
 function getDaysInMonth(year, month) {
-    return new date(year, month, 0).getDate();
+    return new Date(year, month, 0).getDate();
     
 }
