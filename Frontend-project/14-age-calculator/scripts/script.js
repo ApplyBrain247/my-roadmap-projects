@@ -53,9 +53,17 @@ function calculateAge() {
         months = 11;
         years--;
     }
-    result.innerHTML = `You are ${days} days, ${months} months and ${years} years`;
+    result.innerHTML = `You are ${days} ${pluralize('day', days)}, ${months} ${pluralize('month', months)} and ${years} ${pluralize('year', years)}`;
 }
 
 function getDaysInMonth(year, month) {
     return new Date(year, month, 0).getDate(); 
+}
+
+function pluralize(word, count) {
+    // we are assuming that word will always come in a singular form
+    if (count == 1) return word
+
+    // we are also assuming that the plural version of the word will just need an 's' suffix
+    return `${word}s`
 }
