@@ -21,6 +21,7 @@ button{
     color: #fff;
     border: 1px solid #000;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 input{
@@ -30,4 +31,5 @@ input{
     border: 2px solid #000;
     border-radius: 5px;
     margin: 10px 85px;
+    cursor: pointer;
 }
