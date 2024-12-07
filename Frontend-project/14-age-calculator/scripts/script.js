@@ -23,10 +23,10 @@ function calculateAge() {
     let CurrentYear = currentDate.getFullYear();
 
     // declaring final values to show
-    let years, months, days;
+    let months, days;
 
     // total years
-    years = CurrentYear-birthYear;
+    let years = CurrentYear-birthYear;
 
     if (currentMonth >= birthMonth) {
         // total months
