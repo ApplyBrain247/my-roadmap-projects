@@ -3,46 +3,59 @@ userInput.max = new Date().toISOString().split('T')[0];
 let result = document.getElementById('result');
 
 function calculateAge() {
+    // Setting input date as birthdate
     let birthDate = new Date(userInput.value);
+    
+    //getting birth day components
+    let birthDay = birthDate.getDate();
 
-    let d1 = birthDate.getDate();
-    let m1 = birthDate.getMonth() +1;
-    let y1 = birthDate.getFullYear();
+    // getting birth month's value
+    let birthMonth = birthDate.getMonth() +1;
 
-    let today = new Date();
+    // getting birth Year
+    let birthYear = birthDate.getFullYear();
 
-    let d2 = today.getDate();
-    let m2 = today.getMonth() +1;
-    let y2 = today.getFullYear();
+    // getting current date
+    let currentDate = new Date();
 
-    let d3, m3, y3;
+    let currentDay = currentDate.getDate();
+    let currentMonth = currentDate.getMonth() +1;
+    let CurrentYear = currentDate.getFullYear();
 
-    y3 = y2-y1;
+    // declaring final values to show
+    let years, months, days;
 
-    if (m2 >= m1) {
-        m3 = m2-m1;
+    // total years
+    years = CurrentYear-birthYear;
+
+    if (currentMonth >= birthMonth) {
+        // total months
+        months = currentMonth-birthMonth;
     }
     else{
-        y3--;
-        m3 = 12 + m2 - m1;
+        // reduce years value by 1
+        years--;
+        months = 12 + currentMonth - birthMonth;
     }
 
-    if (d2 >= d1) {
-        d3 = d2-d1;    
+    if (currentDay >= birthDay) {
+        // total days
+        days = currentDay-birthDay;    
     }
     else{
-        m3--;
-        d3 = getDaysInMonth(y1, m1) + d2 - d1;
+        // reduce month by 1
+        months--;
+        days = getDaysInMonth(birthYear, birthMonth) + currentDay - birthDay;
     } 
     
-    if (m3 < 0) {
-        m3 = 11;
-        y3--;
+    // if months value is negative
+    if ( months< 0) {
+        months = 11;
+        years--;
     }
-    result.innerHTML = `You are ${d3} days, ${m3} months and ${y3} years`;
+    result.innerHTML = `You are ${days} days, ${months} months and ${years} years`;
 }
 
 function getDaysInMonth(year, month) {
-    return new Date(year, month, 0).getDate();
-    
+    return new Date(year, month, 0).getDate(); 
 }
