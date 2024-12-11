@@ -48,8 +48,7 @@ body {
     height: 200px;
     position: relative;
     padding: 4px;
-    border-radius: 10px;
-    
+    border-radius: 10px;  
 }
 .question{
     border: 1px solid rgb(191, 190, 190);
@@ -62,6 +61,9 @@ body {
 p{
     height: 50px;
     margin-top: 20px;
+    padding: 45px 110px 0px 110px;
+    font-weight: bold;
+    font-size: 18px;
 }
 .buttons{
     border: 1px solid rgb(191, 190, 190);
