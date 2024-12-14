@@ -10,21 +10,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* background-color: #f9f9f9; */
 }
 
 .flashcard-container {
     width: 400px;
-    /* background: white; */
-    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
     border-radius: 10px;
-    /* overflow: hidden; */
 }
 .progress-bar{
     border: 1.5px solid rgb(191, 190, 190);
     height: 25px;
     border-radius: 10px;
-    /* position: relative; */
     margin-bottom: 10px;
     padding: var(--gap);
 }
@@ -32,7 +27,6 @@ body {
     border: 0px solid #000;
     height: 100%;
     width: 100px;
-    /* margin: var(--gap); */
     border-radius: 4px;
     background-color: #bfbebe;
 }
@@ -66,32 +60,20 @@ body {
 }
 .card .answer {
     display: none;
+    
 }
 .card.active {
     display: flex;
 }
 .question{
-    /* border: 1px solid black; */
-    /* height: 170px; */
     text-align: center;
     font-weight: bold;
     font-size: 25px;
     width: 60%;
     margin: auto;
-    /* border-radius: 5px; */
-    /* margin-bottom: 4px; */
 }
-/* p{
-    height: 50px;
-    margin-top: 20px;
-    padding: 45px 110px 0px 110px;
-    font-weight: bold;
-    font-size: 25px;
-    width: 60%;
-    margin: auto;
-} */
+
 .buttons{
-    /* border: 1px solid rgb(191, 190, 190); */
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
@@ -99,7 +81,6 @@ body {
     flex: 1;
 }
 .prev{
-    /* margin-left: -25px; */
     border:none ;
     background-color: var(--bg-color);
 }
@@ -113,7 +94,6 @@ body {
 }
 .next{
     border: none;
-    /* margin-right: -25px; */
     background-color: var(--bg-color);
 }
 .next:after{
