@@ -30,4 +30,4 @@ function fibonacci(numberOfDigits) {
   return sequence
 }
 
-console.log(fibonacci(20))
+console.log(fibonacci(30))

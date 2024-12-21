@@ -7,3 +7,21 @@
 // a number is odd if it has a remainder after it is divided by 2
 // if the number is odd, add it to the group of numbers to be returned
 // by default, the first odd number is 1
+function generateOddNumbers(count) {
+    let oddNumbers = [];
+    let number = 1;
+
+    while (oddNumbers.length < count) {
+        if (number % 2 !== 0) {
+            oddNumbers.push(number);
+        }
+        number++;
+    }
+
+    return oddNumbers;
+}
+
+console.log(generateOddNumbers(20));
+
+
+
