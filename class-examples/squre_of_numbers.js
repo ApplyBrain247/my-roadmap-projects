@@ -7,10 +7,20 @@
 
 function squareNumbers(numbers) {
     const squaredNumbers = [];
-    for (let number = 0; number < numbers.length; number++) {
-        squaredNumbers.push(numbers[number] * numbers[number]);
+    // for (let i = 0; i < numbers.length; i++) {
+    //     squaredNumbers.push(numbers[number] * numbers[number]);
+    // }
+
+    for (number of numbers) {
+        squaredNumbers.push(number * number)
     }
     return squaredNumbers;
 }
 
 console.log(squareNumbers([2, 4, 6, 8, 16]));
+
+function squareNumbers2(numbers) {
+    return numbers.map(function(number) {
+        return number * number
+    })
+}
