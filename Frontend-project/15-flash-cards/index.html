@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
+    <title>Flash Cards</title>
+</head>
+<body>
+    <div class="flashcard-container">
+        <h3>Flash cards</h3>
+        <div class="progress-bar">
+            <div class="progress"></div>
+            <div class="count-container">
+                <div class="total-percent">25%</div>
+                <div class="total-counts">5 of 20</div>
+            </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div class="card active">
+                <p class="question">
+                    What is the difference between var, let, and const?
+                </p>
+                <div class="answer">
+                    In JavaScript, var is function-scoped and can be re-declared; let and const are block-scoped, with let allowing re-assignment and const preventing it. However, const objects can have their contents modified.
+                </div>
+            </div>
+            <div class="card">
+                <p class="question">
+                    What is the difference between parameters and arguments in functions
+                </p>
+                <div class="answer">
+                    A parameter is a variable declared in a function's definition, while An argument is the actual value passed to a function when it's called.
+                </div>
+            </div>
+            <div class="card">
+                <p class="question">
+                    What is the difference between global and local scope?
+                </p>
+                <div class="answer">
+                    Global variables are shared among all functions and scripts, while Local variables are only accessible within the function or block where they're declared.
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="prev">Previous</button>
+                <button class="showAnswer">Show Answer</button>
+                <button class="next">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
