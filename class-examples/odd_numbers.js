@@ -21,7 +21,4 @@ function generateOddNumbers(count) {
     return oddNumbers;
 }
 
-console.log(generateOddNumbers(20));
-
-
-
+console.log(generateOddNumbers(10));
