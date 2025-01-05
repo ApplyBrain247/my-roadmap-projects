@@ -12,17 +12,18 @@
     <h3>facebook</h3>
     <div class="main-container">
         <div class="header">
-            <h4>Create a new account</h4>
-            <p class="quick-messg">it's quick and easy.</p>
+            <div class="form-title">Create a new account</div>
+            <span class="quick-messg">It's quick and easy.</span>
         </div>
         <div class="form-container">
-            <form action="">
-                <div class="name">
+            <form>
+                <div class="input-group">
                     <input type="text" id="first-name" placeholder="First name">
-                    <input type="text"  id="surname" placeholder="Surname">
+                    <input type="text" id="surname" placeholder="Surname">
                 </div>
-                <div class="date-of-birth-container">
-                    <p>Date of birth <i class="fa-solid fa-circle-question"></i></p>
+
+                <label class="label">Date of birth <i class="fa-solid fa-circle-question"></i></label>
+                <div class="input-group">
                     <select name="day" id="day">
                         <option value="">1</option>
                         <option value="">2</option>
@@ -40,38 +41,43 @@
                         <option value="">2024</option>
                         <option value="">2023</option>
                         <option value="">2022</option>
-                    </select>          
+                    </select>
                 </div>
-                <div class="gender-container">
-                    <p>Gender <i class="fa-solid fa-circle-question"></i></p>
-                    <div class="gender-options">
-                          <div class="female">
-                            <label for="female">Female</label>
-                            <input type="radio" id="female" name="gender" value="female">            
-                          </div>
-                          <div class="male">
-                            <label for="male">Male</label>
-                            <input type="radio" id="male" name="gender" value="male">                      
-                          </div>                                          
-                          <div class="custom">
-                            <label for="custom">Custom</label>
-                            <input type="radio" id="custom" name="gender" value="custom">                          
-                          </div>    
+
+                <label class="label">Gender <i class="fa-solid fa-circle-question"></i></label>
+                <div class="gender-options input-group">
+                    <div class="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="female">            
+                    </div>
+                    <div class="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="male">                      
+                    </div>                                          
+                    <div class="custom">
+                        <label for="custom">Custom</label>
+                        <input type="radio" id="custom" name="gender" value="custom">                          
                     </div>
                 </div>
-                <div class="email-password-container">
+
+                <div class="input-group">
                     <input type="text" name="email" placeholder="Mobile number or email address" class="email">
+                </div>
+
+                <div class="input-group">
                     <input type="text" name="password" placeholder="New password">
                 </div>
-                <div>
+
+                <div class="footer">
                     <p>People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more.</a></p>
                     <p>By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
-                </div>      
-            </form>
-            <div class="footer">
-                <button>Sign Up</button>
-                <a href="#">Already have an account?</a>
-            </div>       
+
+                    <div class="submit-section">
+                        <button>Sign Up</button>
+                        <a href="#">Already have an account?</a>
+                    </div>
+                </div>  
+            </form>     
         </div>
     </div>   
 </body>
