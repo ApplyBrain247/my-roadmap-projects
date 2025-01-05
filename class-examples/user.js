@@ -20,6 +20,84 @@
  * - - gender - valid gender (between male and female)
  * 
  * login - login using email and password
- * updatePassword - validate the current password before updating to the newly provide password
+ * updatePassword - validate the current password before updating to the newly provided password
  * 
  */
+
+class UserAccount{
+    constructor(fullName, emailAddress, phoneNumber, password, dateOfBirth, gender, country, profession) {
+        this.fullName = fullName
+        this.emailAddress = emailAddress
+        this.phoneNumber = phoneNumber
+        this.password = password
+        this.dateOfBirth = dateOfBirth
+        this.gender = gender
+        this.country = country
+        this.profession = profession
+    }
+
+    validateEmail() {
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return emailRegex.test(this.emailAddress);
+    }
+
+    validatePhoneNumber() {
+        return this.phoneNumber.length === 11;
+    }
+
+    validatePassword() {
+        return this.password.length >= 8;
+    }
+
+    validateDateOfBirth() {
+        const dateOfBirthRegex = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+        if (!dateOfBirthRegex.test(this.dateOfBirth)) {
+            return false;
+        }
+
+        let birthDate = new Date(this.dateOfBirth);
+        let currentDate = new Date();
+        if (currentDate.getFullYear() - birthDate.getFullYear() < 18) {
+            return false
+        }
+
+        return true
+    }
+
+    validateGender() {
+        return ['male', 'female'].includes(this.gender.toLowerCase());
+    }
+
+    isValid() {
+        return this.validateEmail() && this.validatePhoneNumber() && this.validatePassword() && this.validateGender();
+    }
+      
+    login(email, password) {
+        if (email === this.emailAddress && password === this.password) {
+            return `User: ${this.emailAddress} has been logged in`
+        }
+
+        return 'Invalid login'
+    }
+
+    updatePassword(currentPassword, newPassword) {
+        if (currentPassword === this.password) {
+            if (this.password.length < 8) {
+                return 'Password is too short'
+            }
+            this.password = newPassword;
+            return 'successful';
+        }
+        else {
+            return 'invalid password';
+        }
+    }
+   
+}
+
+const user = new UserAccount('Apply Brain', 'enwehizucukwusam@gmail.com', '07036779411', 'password123', '08/06/1994','male');
+console.log(user.password);
+user.updatePassword('password123', 'password246');
+console.log(user.validatePhoneNumber());
+
+module.exports = UserAccount
