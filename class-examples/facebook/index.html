@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/c1dd0bfc05.js" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+    <title>Sign up for Facebook</title>
+</head>
+<body>
+    <h3>facebook</h3>
+    <div class="main-container">
+        <div class="header">
+            <h4>Create a new account</h4>
+            <p class="quick-messg">it's quick and easy.</p>
+        </div>
+        <div class="form-container">
+            <form action="">
+                <div class="name">
+                    <input type="text" id="first-name" placeholder="First name">
+                    <input type="text"  id="surname" placeholder="Surname">
+                </div>
+                <div class="date-of-birth-container">
+                    <p>Date of birth <i class="fa-solid fa-circle-question"></i></p>
+                    <select name="day" id="day">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                    </select>
+                    <select name="month" id="month">
+                        <option value="">Jan</option>
+                        <option value="">Feb</option>
+                        <option value="">Mar</option>
+                        <option value="">Apr</option>
+                    </select>
+                    <select name="year" id="year">
+                        <option value="">2025</option>
+                        <option value="">2024</option>
+                        <option value="">2023</option>
+                        <option value="">2022</option>
+                    </select>          
+                </div>
+                <div class="gender-container">
+                    <p>Gender <i class="fa-solid fa-circle-question"></i></p>
+                    <div class="gender-options">
+                          <div class="female">
+                            <label for="female">Female</label>
+                            <input type="radio" id="female" name="gender" value="female">            
+                          </div>
+                          <div class="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="male" name="gender" value="male">                      
+                          </div>                                          
+                          <div class="custom">
+                            <label for="custom">Custom</label>
+                            <input type="radio" id="custom" name="gender" value="custom">                          
+                          </div>    
+                    </div>
+                </div>
+                <div class="email-password-container">
+                    <input type="text" name="email" placeholder="Mobile number or email address" class="email">
+                    <input type="text" name="password" placeholder="New password">
+                </div>
+                <div>
+                    <p>People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more.</a></p>
+                    <p>By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+                </div>      
+            </form>
+            <div class="footer">
+                <button>Sign Up</button>
+                <a href="#">Already have an account?</a>
+            </div>       
+        </div>
+    </div>   
+</body>
+</html>
