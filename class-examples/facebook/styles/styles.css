@@ -104,7 +104,7 @@ a {
 }
 
 .error {
-    border: 1px solid red;
+    border-color: red !important;
 }
 
 .error:focus {
