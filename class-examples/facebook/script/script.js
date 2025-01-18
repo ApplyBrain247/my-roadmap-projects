@@ -97,14 +97,31 @@ function submitForm(event) {
   
   if (!facebook.validateFirstName()) {
     firstNameElement.classList.add('error')
+    document.getElementById('first-name-error-messg').textContent = 'What is your name?'
+    document.getElementById('first-name-error-messg').style.cssText = `
+    display:block; 
+    position:absolute; 
+    color:white; 
+    width:100px; 
+    background-color:red; 
+    margin-left:-100px;
+    `
+
   } else {
     firstNameElement.classList.remove('error')
+    document.getElementById('first-name-error-messg').textContent = ''
+
+}
   }
 
   if (!facebook.validateLastName()) {
     lastNameElement.classList.add('error')
+    document.getElementById('surname-error-messg').textContent = 'What is your last name?'
+   
   } else {
     lastNameElement.classList.remove('error')
+    document.getElementById('surname-error-messg').textContent = ''
+
   }
 
   const dobElements = [dayElement, monthElement, yearElement]
@@ -112,8 +129,11 @@ function submitForm(event) {
   for (let element of dobElements) {
     if (!dobIsValid) {
       element.classList.add('error')
+      document.getElementById('dob-error-messg').textContent = 'It looks like you have entered the wrong info. Please make sure that you use your real date o birth'
     } else {
       element.classList.remove('error')
+      document.getElementById('dob-error-messg').textContent = ''
+
     }
   }
 
@@ -129,16 +149,20 @@ function submitForm(event) {
 
   if (!facebook.validateEmail()) {
     emailElement.classList.add('error')
+    document.getElementById('email-error-messg').textContent = 'You will use this when you log in and if you ever need to reset your password'
   } else {
     emailElement.classList.remove('error')
+    document.getElementById('email-error-messg').textContent = ''
   }
 
   if (!facebook.validatePassword()) {
     passwordElement.classList.add('error')
+    document.getElementById('password-error-messg').textContent = 'Your password should be atleast Eight numbeers'
   } else {
     passwordElement.classList.remove('error')
+    document.getElementById('password-error-messg').textContent = ''
   }
-}
+
 
 function getSelectedGender() {
   const genders = document.getElementsByName('gender')
