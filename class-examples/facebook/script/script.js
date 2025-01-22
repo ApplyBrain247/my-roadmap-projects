@@ -81,6 +81,9 @@ function submitForm(event) {
   const firstNameError = document.getElementById('first-name-error-messg')
   const lastNameError = document.getElementById('surname-error-messg')
   const dobError = document.getElementById('dob-error-messg')
+  const genderError = document.getElementById('gender-error-messg')
+  const emailError = document.getElementById('email-error-messg')
+  const passwordError = document.getElementById('password-error-messg')
   
   const firstName = firstNameElement.value
   const lastName = lastNameElement.value
@@ -101,54 +104,55 @@ function submitForm(event) {
   )
   
   const firstNameValidation = facebook.validateFirstName()
+  firstNameError.textContent = firstNameValidation
   if (firstNameValidation) {
     firstNameElement.classList.add('error')
-    firstNameError.textContent = firstNameValidation
   } else {
     firstNameElement.classList.remove('error')
-    firstNameError.textContent = ''
   }
 
   const lastNameValidation = facebook.validateLastName()
+  lastNameError.textContent = lastNameValidation
   if (lastNameValidation) {
     lastNameElement.classList.add('error')
-    lastNameError.textContent = lastNameValidation   
   } else {
     lastNameElement.classList.remove('error')
-    lastNameError.textContent = ''
   }
 
   const dobValidation = facebook.validateDateOfBirth()
+  dobError.textContent = dobValidation
   if (dobValidation) {
-    dobError.textContent = dobValidation
     dayElement.classList.add('error')
     monthElement.classList.add('error')
     yearElement.classList.add('error')
-    }
-    else {
-      dobError.textContent = ''
-      dayElement.classList.remove('error')
-      monthElement.classList.remove('error')
-      yearElement.classList.remove('error')
-    }
+  } else {
+    dayElement.classList.remove('error')
+    monthElement.classList.remove('error')
+    yearElement.classList.remove('error')
+  }
 
   const genders = document.getElementsByClassName('gender')
-  const genderIsValid = facebook.validateGender()
+  const genderValidation = facebook.validateGender()
   for (let gender of genders) {
-    if (!genderIsValid) {
+    if (genderValidation) {
       gender.classList.add('error')
     } else {
       gender.classList.remove('error')
     }
   }
+  genderError.textContent = genderValidation
 
-  if (!facebook.validateEmail()) {
+  const emailValidation = facebook.validateEmail()
+  emailError.textContent = emailValidation
+  if (emailValidation) {
     emailElement.classList.add('error')
   } else {
     emailElement.classList.remove('error')
   }
 
-  if (!facebook.validatePassword()) {
+  const passwordValidation = facebook.validatePassword()
+    passwordError.textContent = passwordValidation
+    if (passwordValidation) {
     passwordElement.classList.add('error')
   } else {
     passwordElement.classList.remove('error')

@@ -32,7 +32,7 @@ h3{
     border-radius: 5px; 
     background-color: white;
     box-shadow: 0.5px 0.5px 5px 0px rgba(0, 0, 0, 0.5);
-    width: 432px;
+    width: 500px;
     margin: auto;
 }
 
@@ -41,20 +41,37 @@ h3{
     padding: 10px;
 }
 
-.input-group {
+.input-group, .gender-options {
     display: flex;
     gap: 5px;
     margin-bottom: 10px;
     position: relative;
 }
 
-.input-group > input,
+.input-group input,
 .input-group select,
 .gender-options > div {
-    width: 100%;
     border: 1px solid #CCC;
     border-radius: 5px;
     padding: 10px;
+}
+
+.input-group select {
+    width: 100%;
+}
+
+.input-flex {
+    display: flex;
+    gap: 2px;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.input-flex .input-group,
+.input-flex .gender-options,
+.input-group .input-flex {
+    margin-bottom: 0;
 }
 
 .label {
@@ -67,6 +84,7 @@ h3{
 .gender-options > div {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .footer{
@@ -112,17 +130,8 @@ a {
     outline-color: red;
 }
 .error-message{
-    display: none;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: red;
-    color: #fff;
-    width: 100px;
-    height: 25px;
-    margin-top: 30px;
-    margin-left: 100px;
-    position: absolute;
-    font-size: 10px;
+    color: red;
+    font-size: 11px;
 }
 .error + .error-message{
     display: block;

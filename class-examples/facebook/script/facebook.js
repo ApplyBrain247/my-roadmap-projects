@@ -26,15 +26,17 @@ class Facebook extends UserAccount {
   }
 
   validateFirstName() {
-    return this.firstName.length >=3 ? null : 'First name must be 3 character long.'
+    return this.firstName.length >=3 ? null : 'First name must be at least 3 characters long.'
   }
 
   validateLastName() {
-    return this.lastName.length >= 3 ? null : 'Last name must be 3 character long.'
+    return this.lastName.length >= 3 ? null : 'Last name must be at least 3 characters long.'
   }
   
   validateGender() {
-    return ['male', 'female', 'custom'].includes(this.gender.toLowerCase())
+    const allowedGenders = ['male', 'female', 'custom']
+    return allowedGenders.includes(this.gender.toLowerCase()) ?
+      null : `Gender must be either of ${allowedGenders.join(', ')}`
   }
 
   validateDateOfBirth() {

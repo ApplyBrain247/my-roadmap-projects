@@ -38,7 +38,7 @@ class UserAccount{
 
     validateEmail() {
         const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        return emailRegex.test(this.emailAddress);
+        return emailRegex.test(this.emailAddress) ? null : 'Email address is invalid';
     }
 
     validatePhoneNumber() {
@@ -46,7 +46,7 @@ class UserAccount{
     }
 
     validatePassword() {
-        return this.password.length >= 8;
+        return this.password.length >= 8 ? null : 'Password must be at least 8 characters long.';
     }
 
     validateDateOfBirth() {
