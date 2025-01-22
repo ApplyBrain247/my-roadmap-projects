@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/c1dd0bfc05.js" crossorigin="anonymous"></script>
+    <script src="script/script.js" type="module" defer></script>
+    <title>Sign up for Facebook</title>
+</head>
+<body>
+    <h3>facebook</h3>
+    <div class="main-container">
+        <div class="header">
+            <div class="form-title">Create a new account</div>
+            <span class="quick-messg">It's quick and easy.</span>
+        </div>
+        <div class="form-container">
+            <form id="signup-form">
+                <div class="input-group">
+                    <div class="input-flex">
+                        <input type="text" id="first-name" placeholder="First name">
+                        <span id="first-name-error-messg" class="error-message"></span>
+                    </div>
+                    
+                    <div class="input-flex">
+                        <input type="text" id="surname" placeholder="Surname">
+                        <span id="surname-error-messg" class="error-message"></span>
+                    </div>
+                </div>
+
+                <label class="label">Date of birth <i class="fa-solid fa-circle-question"></i></label>
+                <div class="input-flex">
+                    <div class="input-group">
+                        <select name="day" id="day">
+                        </select>
+                        <select name="month" id="month">
+                        </select>
+                        <select name="year" id="year">
+                        </select>
+                    </div>
+                    <span id="dob-error-messg" class="error-message"></span>
+                </div>
+
+                <label class="label">Gender <i class="fa-solid fa-circle-question"></i></label>
+                <div class="input-flex">
+                    <div class="gender-options">
+                        <div class="female gender">
+                            <label for="female">Female</label>
+                            <input type="radio" id="female" name="gender" value="female">            
+                        </div>
+                        <div class="male gender">
+                            <label for="male">Male</label>
+                            <input type="radio" id="male" name="gender" value="male">                      
+                        </div>
+                        <div class="custom gender">
+                            <label for="custom">Custom</label>
+                            <input type="radio" id="custom" name="gender" value="custom">
+                        </div>
+                    </div>
+                    <span id="gender-error-messg" class="error-message"></span>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-flex">
+                        <input type="email" name="email" placeholder="Email address" id="email">
+                        <span id="email-error-messg" class="error-message"></span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-flex">
+                        <input type="password" name="password" placeholder="New password" id="password">
+                        <span id="password-error-messg" class="error-message"></span>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <p>People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more.</a></p>
+                    <p>By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+
+                    <div class="submit-section">
+                        <button>Sign Up</button>
+                        <a href="#">Already have an account?</a>
+                    </div>
+                </div>  
+            </form>     
+        </div>
+    </div>   
+</body>
+</html>
