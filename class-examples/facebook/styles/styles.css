@@ -45,6 +45,7 @@ h3{
     display: flex;
     gap: 5px;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .input-group > input,
@@ -109,4 +110,20 @@ a {
 
 .error:focus {
     outline-color: red;
+}
+.error-message{
+    display: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: red;
+    color: #fff;
+    width: 100px;
+    height: 25px;
+    margin-top: 30px;
+    margin-left: 100px;
+    position: absolute;
+    font-size: 10px;
+}
+.error + .error-message{
+    display: block;
 }

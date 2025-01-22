@@ -15,6 +15,7 @@ for (let i = 1; i <= 31; i++) {
   optionElement.value = i
   optionElement.textContent = i
 
+
   dayElement.appendChild(optionElement)
 }
 
@@ -76,6 +77,10 @@ function submitForm(event) {
   const yearElement = document.getElementById('year')
   const emailElement = document.getElementById('email')
   const passwordElement = document.getElementById('password')
+
+  const firstNameError = document.getElementById('first-name-error-messg')
+  const lastNameError = document.getElementById('surname-error-messg')
+  const dobError = document.getElementById('dob-error-messg')
   
   const firstName = firstNameElement.value
   const lastName = lastNameElement.value
@@ -95,47 +100,37 @@ function submitForm(event) {
     password
   )
   
-  if (!facebook.validateFirstName()) {
+  const firstNameValidation = facebook.validateFirstName()
+  if (firstNameValidation) {
     firstNameElement.classList.add('error')
-    document.getElementById('first-name-error-messg').textContent = 'What is your name?'
-    document.getElementById('first-name-error-messg').style.cssText = `
-    display:block; 
-    position:absolute; 
-    color:white; 
-    width:100px; 
-    background-color:red; 
-    margin-left:-100px;
-    `
-
+    firstNameError.textContent = firstNameValidation
   } else {
     firstNameElement.classList.remove('error')
-    document.getElementById('first-name-error-messg').textContent = ''
-
-}
+    firstNameError.textContent = ''
   }
 
-  if (!facebook.validateLastName()) {
+  const lastNameValidation = facebook.validateLastName()
+  if (lastNameValidation) {
     lastNameElement.classList.add('error')
-    document.getElementById('surname-error-messg').textContent = 'What is your last name?'
-   
+    lastNameError.textContent = lastNameValidation   
   } else {
     lastNameElement.classList.remove('error')
-    document.getElementById('surname-error-messg').textContent = ''
-
+    lastNameError.textContent = ''
   }
 
-  const dobElements = [dayElement, monthElement, yearElement]
-  const dobIsValid = facebook.validateDateOfBirth()
-  for (let element of dobElements) {
-    if (!dobIsValid) {
-      element.classList.add('error')
-      document.getElementById('dob-error-messg').textContent = 'It looks like you have entered the wrong info. Please make sure that you use your real date o birth'
-    } else {
-      element.classList.remove('error')
-      document.getElementById('dob-error-messg').textContent = ''
-
+  const dobValidation = facebook.validateDateOfBirth()
+  if (dobValidation) {
+    dobError.textContent = dobValidation
+    dayElement.classList.add('error')
+    monthElement.classList.add('error')
+    yearElement.classList.add('error')
     }
-  }
+    else {
+      dobError.textContent = ''
+      dayElement.classList.remove('error')
+      monthElement.classList.remove('error')
+      yearElement.classList.remove('error')
+    }
 
   const genders = document.getElementsByClassName('gender')
   const genderIsValid = facebook.validateGender()
@@ -149,20 +144,15 @@ function submitForm(event) {
 
   if (!facebook.validateEmail()) {
     emailElement.classList.add('error')
-    document.getElementById('email-error-messg').textContent = 'You will use this when you log in and if you ever need to reset your password'
   } else {
     emailElement.classList.remove('error')
-    document.getElementById('email-error-messg').textContent = ''
   }
 
   if (!facebook.validatePassword()) {
     passwordElement.classList.add('error')
-    document.getElementById('password-error-messg').textContent = 'Your password should be atleast Eight numbeers'
   } else {
     passwordElement.classList.remove('error')
-    document.getElementById('password-error-messg').textContent = ''
   }
-
 
 function getSelectedGender() {
   const genders = document.getElementsByName('gender')
@@ -170,7 +160,7 @@ function getSelectedGender() {
     if (gender.checked) {
       return gender.value
     }
-  }
-
+  }                                                                     
   return ''
+}
 }

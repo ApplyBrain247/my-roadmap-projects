@@ -26,11 +26,11 @@ class Facebook extends UserAccount {
   }
 
   validateFirstName() {
-    return this.firstName.length >= 3
+    return this.firstName.length >=3 ? null : 'First name must be 3 character long.'
   }
 
   validateLastName() {
-    return this.lastName.length >= 3
+    return this.lastName.length >= 3 ? null : 'Last name must be 3 character long.'
   }
   
   validateGender() {
@@ -41,7 +41,7 @@ class Facebook extends UserAccount {
     let birthDate = new Date(this.dateOfBirth)
     let currentDate = new Date()
 
-    return (currentDate.getFullYear() - birthDate.getFullYear()) >= 18
+    return (currentDate.getFullYear() - birthDate.getFullYear()) >= 18 ? null : 'You must be at least 18 years old'
   }
 }
 
