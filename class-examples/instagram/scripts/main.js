@@ -1,5 +1,4 @@
-import Instagram from '../instagram.js'
-
+import Instagram from './instagram.js'
 
 document.getElementById('sign-up-form').addEventListener('submit', submitForm)
 
@@ -63,5 +62,3 @@ function submitForm(event) {
     passwordElement.classList.remove('error')
     }
 }
-
-  

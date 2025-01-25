@@ -1,6 +1,4 @@
-
-
-import UserAccount from '../../user.js'
+import UserAccount from '../../user.js';
 
 class Instagram extends UserAccount {
   constructor(
@@ -10,14 +8,15 @@ class Instagram extends UserAccount {
     password
   ) {
     super(
-      `${fullName} ${userName}`,
+      fullName,
       emailAddress,
       '',
       password,
       '',
+      '',
+      '',
       ''
     )
-    this.fullName = fullName.trim()
     this.userName = userName.trim()
   }
 
