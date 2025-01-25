@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/script.js" defer></script>
+    <script type="module" src="scripts/main.js" defer></script>
     <script src="https://kit.fontawesome.com/c1dd0bfc05.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,17 +26,28 @@
         
         <div class="form-container">
             <form action="#">
-                <input type="text" placeholder="Mobile number or email address">
-                <input type="text" placeholder="Password">
-                <input type="text" placeholder="Full name">
-                <input type="text" placeholder="Username">
-            </form>
-            <span>People who use our service may have uploaded your contact information to Instagram. <a href="#">Learn more</a></span>
-            <span>By signing up, you agree to our. <a href="#">Terms</a>, <a href="#">Privacy</a>, <a href="#">Policy</a> and <a href="#">Cookies Policy</a>.</span>
-            <div class="footer-button">
-                <button>Sign Up</button>                
-            </div>
-            
+                <div class="input-flex">
+                    <input type="text" placeholder="Mobile number or email address" >
+                    <span id="email-error-messg" class="error-message"></span>
+                </div>
+                <div class="input-flex">
+                    <input type="password" placeholder="Password" id="password">
+                    <span id="password-error-messg" class="error-message"></span>
+                </div>
+                <div class="input-flex">
+                    <input type="text" placeholder="Full name" id="full-name">
+                    <span id="full-name-error-message" class="error-message"></span>
+                </div>
+                <div class="input-flex">
+                    <input type="text" placeholder="Username" id="user-name">
+                    <span id="username-error-message" class="error-message"></span>
+                </div> 
+                <span>People who use our service may have uploaded your contact information to Instagram. <a href="#">Learn more</a></span>
+                <span>By signing up, you agree to our. <a href="#">Terms</a>, <a href="#">Privacy</a>, <a href="#">Policy</a> and <a href="#">Cookies Policy</a>.</span>
+                <div class="footer-button">
+                    <button id="sign-up-form">Sign Up</button>                
+                </div>             
+            </form>          
         </div>
     </div>
     
