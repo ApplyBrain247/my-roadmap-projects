@@ -21,11 +21,11 @@ class Instagram extends UserAccount {
   }
 
   validateFullName() {
-    return this.fullName.length >=3 ? null : 'First name must be at least 3 characters long.'
+    return this.fullName.length >=3 ? null : 'Full name must be at least 3 characters long.'
   }
 
   validateUserName() {
-    return this.UserName.length >= 3 ? null : 'Last name must be at least 3 characters long.'
+    return this.userName.length >= 3 ? null : 'User name must be at least 3 characters long.'
   }
 }
 

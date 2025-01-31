@@ -20,45 +20,41 @@ function submitForm(event) {
     const email = emailElement.value
     const password = passwordElement.value
 
-    const instagram = new Instagram(
-        fullName,
-        userName,
-        email,
-        password
-      )
+    const instagram = new Instagram(fullName, userName, email, password)
 
-    const fullNameValidation = instagram.validateFirstName()
+    const fullNameValidation = instagram.validateFullName()
     fullNameError.textContent = fullNameValidation
     if (fullNameValidation) {
-    fullNameElement.classList.add('error')
-    }  
-    else {
-    firstNameElement.classList.remove('error')
+        fullNameElement.classList.add('error')
+    } else {
+        fullNameElement.classList.remove('error')
     }
 
-    const userNameValidation = instagram.validateLastName()
+    const userNameValidation = instagram.validateUserName()
     userNameError.textContent = userNameValidation
     if (userNameValidation) {
-      userNameValidation.classList.add('error')
+        userNameElement.classList.add('error')
     } else {
-      userNameElement.classList.remove('error')
+        userNameElement.classList.remove('error')
     }
 
     const emailValidation = instagram.validateEmail()
     emailError.textContent = emailValidation
     if (emailValidation) {
-    emailElement.classList.add('error')
-    } 
-    else {
-    emailElement.classList.remove('error')
+        emailElement.classList.add('error')
+    } else {
+        emailElement.classList.remove('error')
     }
 
     const passwordValidation = instagram.validatePassword()
     passwordError.textContent = passwordValidation
     if (passwordValidation) {
-    passwordElement.classList.add('error')
-    } 
-    else {
-    passwordElement.classList.remove('error')
+        passwordElement.classList.add('error')
+    } else {
+        passwordElement.classList.remove('error')
     }
+
+    if (!fullNameValidation && !userNameValidation && !emailValidation && !passwordValidation) {
+        document.getElementById('sign-up-form').submit()
+    }
 }
