@@ -1,4 +1,5 @@
 import Github from './github.js'
+
 document.getElementById('sign-up-form').addEventListener('submit', submitForm)
 
 function submitForm(event) {
@@ -16,7 +17,7 @@ function submitForm(event) {
     const password = passwordElement.value
     const userName = userNameElement.value
 
-    const github = new Github (email, password, userName)
+    const github = new Github (email, userName , password)
 
     const emailValidation = github.validateEmail()
     emailError.textContent = emailValidation
