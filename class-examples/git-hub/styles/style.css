@@ -1,0 +1,58 @@
+body{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-container{
+    width: 500px;
+    margin: auto;
+    border: 1px solid #000;
+    padding: 0px 40px 0px 70px;
+}
+.sign-in-qtn{
+    display: flex;
+    justify-content: end;
+}
+.sign-in-qtn a{
+   color: #000;
+}
+.input-container input{
+    width: 450px;
+    height: 25px;
+    margin-top: 10px;
+}
+.password-info, .username-info{
+    padding-right: 43px;
+    margin-top: 2px;
+    font-size: 12px;
+    color: #808080;
+}
+.button-container{
+    padding-bottom: 40px;
+}
+.button-container button{
+    width: 460px;
+    height: 45px;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+.button-info{
+    font-size: 12px;
+    padding-right: 80px;
+    color: #808080;
+}
+.error{
+    border-color: #ff0000;
+}
+.error:focus{
+    outline-color: #ff0000;
+}
+.error-message{
+    color: red;
+    font-size: 11px;
+}
+.error + .error-message{
+    display: block;
+}

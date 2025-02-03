@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c1dd0bfc05.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="module" src="scripts/script.js" defer></script>
+    <title>github</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <div class="sign-in-qtn">
+                <p>Already have an account?   <a href="#">Sign in <i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            <div>
+                <h2>Sign up to GitHub</h2>
+            </div>
+        </div>
+        <div class="form-container">
+            <form id="sign-up-form">
+                <div class="input-container">
+                    <label for="">Email</label><br>
+                    <input type="text" placeholder="Email" id="email">
+                    <span id="email-error-messg" class="error-message"></span>
+                </div>
+                <div class="input-container">
+                    <label for="">Password</label><br>
+                    <input type="password" placeholder="Password" id="password">
+                    <span  id="password-error-messg" class="error-message"></span>
+                    <p class="password-info">Password should be at least above OR at least 8 characters including a number and a lowercase letter.</p>
+                </div>
+                <div class="input-container">
+                    <label for="">Username</label><br>
+                    <input type="text" placeholder="Username" id="username">
+                    <span id="username-error-message" class="error-message"></span>
+                    <p class="username-info">Username may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen.</p>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Continue > </button>
+                    <p class="button-info">By creating an account, you agree to the <a href="#">Terms of Service</a>. For more information about GitHub's privacy practices, see the <a href="#">GitHub Privacy Statement</a>. We'll occasionally send you account-related emails.</p>
+                </div>
+            </form>
+        </div>
+    </div>   
+</body>
+</html>
