@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" type="module" defer></script>
     <title>Grammy</title>
 </head>
 <body>
@@ -22,21 +23,18 @@
         </div>
         <div class="highlight-info">Click here to watch highlights from the 67th GRAMMY Awards</div>
     </div>
-    <div class="category">
-        <h2>Nominees for the Song Of The Year</h2>
-        <div class="project" id="song-of-the-year"></div>
-
-        <h2>Nominees for Record of The Year</h2>
-        <div class="project" id="record-of -the-year"></div>
-
-        
+    <div class="categories">
+        <!-- moved to JS and used to dynamically build the HTML -->
+        <!-- <section>
+            <h2>Nominees for the Song Of The Year</h2>
+            <div class="nominees">
+                <div class="project" id="song-of-the-year">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKEvkLFCXXu6M-wQzar-CphRcNkXE62Rao4Q&s" alt="not like us">
+                    <span class="title">Foo Bar</span>
+                    <small class="artiste">Apply</small>
+                </div>
+            </div>
+        </section> -->
     </div>
-    <div class="project">
-        <div class="img-container-two"></div>
-    </div>
-    <div class="Artiste">
-        <div class="img-container-three"></div>
-    </div>
-    
 </body>
 </html>
