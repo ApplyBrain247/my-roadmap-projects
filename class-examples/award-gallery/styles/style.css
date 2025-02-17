@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+}
+.header-list{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    padding-top: 20px;
+    list-style-type: none;
+}
+.highlight-info{
+    text-align: center;
+    border: 1px solid grey;
+    padding: 20px;
+    color: white;
+    background-color: rgb(245, 79, 79);
+}
+
+.project {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.project .title {
+    font-weight: bold;
+}
+
+.project img {
+    width: 200px;
+}
+
+.nominees {
+    display: flex;
+    gap: 50px;
+}
