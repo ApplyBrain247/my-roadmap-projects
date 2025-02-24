@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 80%;
+    max-width: 900px;
+}
+.participaant {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ff4081;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+.name {
+    margin-top: 10px;
+    font-size: 10px;
+    margin-left: -180px;
+}
+.muted {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 12px;
+    height: 12px;
+    background-color: #808080;
+    border-radius: 50%;
+}
+.muted, .fa-microphone{
+  font-size: 12px;
+  margin-left: -30px;
+}
+.footer-opt{
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+    text-align: center;
+    position: fixed;
+    bottom: 70px;
+    right: 460px;
+}
+.arrow-up{
+    width: 20px;
+    padding: 4px;
+    background-color: #7b0f0f;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: -460px;
+}
+.mic{
+    width: 20px;
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: -420px;
+}
+.mic, .fa-microphone {
+    color: #ff0000;
+}
+.cam{
+    width: 20px;
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: -298px;
+}
+.arrow-up-two{
+    width: 20px;
+    padding: 4px;
+    background-color: #7b0f0f;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: -347px;
+}
+
+.cam, .fa-video-slash{
+    color: #ff0000;
+    border-color: #ff4081;
+}
+.captioning, .smile-emojie, .arrow-bracket, .hand{
+    width: 30px;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: rgb(67, 65, 65);
+}
+.ellipsis{
+    height: 20px;
+    background-color: #3d3c3c;
+    width: 10px;
+    padding: 4px;
+    border-radius: 10px;
+}
+.phone {
+    border: 1px solid red;
+    width: 35px;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: red;
+}
+
