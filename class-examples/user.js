@@ -85,6 +85,7 @@ class UserAccount{
             if (this.password.length < 8) {
                 return 'Password is too short'
             }
+            
             this.password = newPassword;
             return 'successful';
         }

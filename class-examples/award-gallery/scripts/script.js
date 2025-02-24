@@ -28,6 +28,7 @@ categories.forEach(category => {
     const categorySection = document.createElement('section');
     let categoryHtml = `
         <h2>Nominees for the ${category.name}</h2>
+        
         <div class="nominees">
     `;
     for (let project of category.nominations) {
@@ -40,6 +41,7 @@ categories.forEach(category => {
         `
     }
     categoryHtml += '</div>'
+    
     categorySection.innerHTML = categoryHtml
 
     categoriesContainer.appendChild(categorySection);
