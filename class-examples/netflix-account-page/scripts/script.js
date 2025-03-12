@@ -14,7 +14,7 @@ const profiles = [
 // append the html to the parent element
 let profileHtml = ''
 for (let profile of profiles) {
-  profileHtml += `
+  profileHtml += `  
     <div class="img-container">
       <img src="${profile.imagePath}" alt="#" width="100px" height="100px">
       <p>${profile.name}</p>
