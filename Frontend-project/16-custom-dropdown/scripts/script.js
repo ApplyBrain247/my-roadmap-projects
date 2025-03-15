@@ -28,8 +28,44 @@ selected.onblur = ()=> {
 optionLists.forEach(
     (item) =>
     (item.onclick = () =>{
-        selected.placeholder = item.innerText;
+        selected.value = item.innerText;
         document.querySelector('h1').innerHTML = item.innerHTML
-    })
-   
+    })  
 )
+
+document.addEventListener("DOMContentLoaded", function () {
+    const inputField = document.querySelector(".selected"); 
+    inputField.addEventListener("click", function () {
+        optionContainer.classList.toggle("show");
+        arrow.classList.toggle("rotate");
+    });
+    
+    // Filter items based on input
+    inputField.addEventListener("input", function () {
+        let filter = inputField.value.toLowerCase();
+        optionLists.forEach(option => {
+            if (option.textContent.toLowerCase().includes(filter)) {
+                option.style.display = "block";
+            } else {
+                option.style.display = "none";
+            }
+        });
+    });
+
+    // Select an option and close dropdown
+    optionLists.forEach(option => {
+        option.addEventListener("click", function () {
+            inputField.value = this.textContent;
+            optionContainer.classList.remove("show");
+            arrow.classList.remove("rotate");
+        });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!event.target.closest(".select-box")) {
+            optionContainer.classList.remove("show");
+            arrow.classList.remove("rotate");
+        }
+    });
+});
